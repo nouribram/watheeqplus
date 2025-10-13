@@ -1,1 +1,1 @@
-# other projects
+# Other Projects - Landing Page
