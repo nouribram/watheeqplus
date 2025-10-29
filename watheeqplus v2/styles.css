@@ -533,7 +533,7 @@ a{
 }
 
 .about-text h3 {
-  color: #D4AF37;
+  color: var(--gold);
   margin-bottom: 10px;
   font-size: 1.6rem;
 }
