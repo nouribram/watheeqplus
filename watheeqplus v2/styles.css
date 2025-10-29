@@ -303,6 +303,7 @@ a{
     animation: gradient-shift 15s ease infinite;
    */
     background-image: url('./img/11.jpg');
+    background-repeat: no-repeat;
     background-size: cover;
     opacity: 0.7;
     z-index: -1;
@@ -585,12 +586,30 @@ a{
   }
 }
 
-/*services*/
+/*===========================
+       services
+==========================*/
 .services-section, .timeline-section, .expertise-section, .testimonials-section, .pricing-section, .faq-section, .contact-section {
     padding: 100px 0;
     position: relative;
 }
-
+.services-section{
+    background: url('img/ai3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/*
+.services-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  z-index: 2;
+  pointer-events: none;
+}
+*/
 .section-header {
     text-align: center;
     margin-bottom: 60px;
@@ -661,7 +680,9 @@ a{
     height: 80px;
     margin-bottom: 25px;
 }
-
+.service-icon img{
+    width: 100%;
+}
 .service-icon svg {
     width: 100%;
     height: 100%;
@@ -678,7 +699,9 @@ a{
     line-height: 1.7;
     opacity: 0.9;
 }
-
+/*====================================
+      timeline
+=====================================*/
 .timeline {
     position: relative;
     max-width: 900px;
@@ -755,7 +778,14 @@ a{
     opacity: 0.9;
     line-height: 1.6;
 }
-
+/*==================================
+      expertise section
+======================================*/
+.expertise-section{
+     background: url('img/wormhole-a.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 .expertise-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -786,7 +816,12 @@ a{
     font-size: 18px;
     color: var(--gold);
 }
-
+.expertise-icon img{
+    width: 70px;
+}
+/*======================================
+          testimonial 
+=========================================*/
 .testimonials-carousel {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -869,7 +904,7 @@ a{
     color: var(--dark);
     transform: scale(1.1);
 }
-
+/*
 .pricing-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -980,7 +1015,15 @@ a{
     transform: translateY(-3px) scale(1.05);
     box-shadow: 0 15px 40px var(--gold-glow);
 }
-
+*/
+/*===================================
+                FAQ
+======================================*/
+.faq-section{
+    background: url('img/ai4.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 .faq-container {
     max-width: 800px;
     margin: 0 auto;
@@ -1036,7 +1079,9 @@ a{
     line-height: 1.8;
     opacity: 0.9;
 }
-
+/*=========================================
+                  contact
+===========================================*/
 .contact-container {
     display: grid;
     grid-template-columns: 1fr 1.5fr;
@@ -1085,7 +1130,9 @@ a{
     position: relative;
     margin-bottom: 30px;
 }
-
+.contact-icon img{
+    width: 50px;
+}
 .form-group input,
 .form-group textarea {
     width: 100%;
@@ -1146,7 +1193,7 @@ a{
     background: linear-gradient(135deg, var(--gold), var(--gold));
     border: none;
     border-radius: 25px;
-    color: var(--white);
+    color: var(--dark);
     font-size: 18px;
     font-weight: 700;
     cursor: pointer;
@@ -1155,7 +1202,7 @@ a{
 
 .btn-submit:hover {
     transform: translateY(-3px);
-    box-shadow: 0 15px 40px var(--gold), 0 15px 60px var(--gold);
+    box-shadow: var(--glow);
 }
 
 .footer {
